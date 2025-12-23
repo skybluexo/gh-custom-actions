@@ -2,8 +2,6 @@ const core = require('@actions/core');
 //const github = require('@actions/github');
 const exec = require('@actions/exec');
 
-const s3 = new aws.S3();
-
 function run() {
     // 1) Get some input values
     const bucket = core.getInput('bucket', { required: true });
